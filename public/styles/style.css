@@ -8,7 +8,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Spartan';
+    font-family: 'Dosis',sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
 }
@@ -19,169 +19,20 @@ body{
 
 /* Main container  */
 main{
-    width: 100%;
+    width: 100w;
 }
 
 /* Navbar work   */
-.navbar{
-    background-color: #ffffff;
+nav{
+    background-color: red;
     width: 100%;
     height: 100px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 1px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);;
-}
-
-.nav li {
-    display: inline-flex;
-    justify-content: space-evenly;
-    margin-left: 50px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.nav a:hover {
-    color: rgb(221, 146, 8);
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.navbar .logo:hover {
-    color: rgb(221, 146, 8);
-}
-
-.logo img {
-    height: 95px;
-    width: 95px;
-}
-
-.container img {
-    height: 50px;
-    width: 50px;
-}
-
-.sidebar img {
-    height: 100px;
-    width: 100px;
-}
-
-.btn {
-    top: 20px;
-    left: 20px;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: #ffffff;
-}
-
-#closeBtn {
-    border: none;
-    outline: none;
-    background-color: #f8f9fa;
-}
-
-.offcanvas {
-    position: fixed;
-    top: 0;
-    right: -500px; /* Initially off-canvas */
-    height: 100vh;
-    width: 500px;
-    background-color: #ffffff;
-    transition: right 0.3s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.offcanvas-header {
-    padding: 10px;
-    background-color: #f8f9fa;
-}
-
-.offcanvas-body {
-    padding: 20px;
-}
-
-.links {
-    display: flex;
-    flex-direction: column;
-    padding-top: 250px;
-}
-
-.link {
-    display: flex;
-    align-items: center; /* Align items vertically in the center */
-}
-
-.links img {
-    height: 20px;
-    width: 20px;
-    margin-right: 7.5px; /* Add margin for spacing between image and text */
-}
-
-.links a {
-    padding-top: 10px;
-    text-decoration: none; /* Remove underline from links */
-}
-
-.info {
-    padding-top: 250px;
-}
-
-.info p {
-    padding-top: 4px;
-    color: rgb(145, 97, 94);
 }
 
 /* Header Container work  */
 .header-container{
     background-color: orange;
     width: 100%;
-}
-.header-wrapper{
-    width: 100%;
-    height: calc(100vh - 100px);
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/images/bg-01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap:20px;
-}
-.left-header-info{
-    max-width: 40%;
-    flex-grow: 0;
-    flex-shrink: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-}
-.left-header-info > h1{
-    font-size: 4em;
-    font-weight: 900;
-    color: white;
-}
-.left-header-info > button{
-    width: 150px;
-    color: white;
-    background-color: #ffa41d;
-    padding: 16px 10px;
-    border-radius: 50px;
-    font-size: 0.8em;
-    font-weight: bold;
-    border: none;
-}
-.left-header-info > button:hover{
-    background-color: #c6760e;
 }
 
 /* Features Work  */
