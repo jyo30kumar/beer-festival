@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Dosis";
+    font-weight: 0 900;
+    src: url('../fonts/dosis-variablefont_wght-webfont.woff2') format('woff2-variations'),
+    url('../fonts/dosis-variablefont_wght-webfont.woff') format('woff-variations');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan';
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+*{  
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main container  */
+main{
+    width: 100%;
+}
+
+/* Navbar work   */
+.navbar{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav li {
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: rgb(221, 146, 8);
+    text-decoration: underline;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar .logo:hover {
+    color: rgb(221, 146, 8);
+}
+
+#btn {
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.offcanvas {
+    position: fixed;
+    top: 0;
+    right: -500px; /* Initially off-canvas */
+    height: 100vh;
+    width: 500px;
+    background-color: #fff;
+    transition: right 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.offcanvas-header {
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.offcanvas-body {
+    padding: 20px;
+}
+
+/* Header Container work  */
+.header-container{
+    background-color: orange;
+    width: 100%;
+}
+
+/* Features Work  */
+.features{
+    background-color: lightgreen;
+    width: 100%;
+}
+
+/* Brand Container work  */
+.brand-container{
+    background-color: lightblue;
+    width: 100%;
+}
+
+/* Event Container Work */
+.event-container{
+    background-color: blueviolet;
+    width: 100%;
+}
+
+/* Festival container work  */
+.festival-container{
+    background-color: coral;
+    width: 100%;
+}
+
+/* Follow Us page work  */
+.followUs-page{
+    background-color: aquamarine;
+    width: 100%;
+}
+
+/* Footer work  */
+footer{
+    background-color: black;
+    width: 100%;
+}
