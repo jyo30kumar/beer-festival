@@ -36,9 +36,26 @@ nav{
 }
 
 /* Features Work  */
-.features{
+.features {
     background-color: lightgreen;
     width: 100%;
+    
+}
+.features h1, .features p, .features h3 {
+    font-family: 'Dosis', sans-serif; 
+}
+.craftbeer {
+    text-align: center;
+}
+.featureImages1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 0%;
+}
+
+.featureImages1 img {
+    width: 100%;
+    height: auto;
 }
 
 /* Brand Container work  */
