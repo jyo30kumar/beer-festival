@@ -12,8 +12,10 @@ body{
     font-weight: 700;
     font-size: 1.2rem;
 }
+
 *{  
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -53,8 +55,8 @@ main{
     cursor: pointer;
 }
 
-.navbar .logo:hover {
-    color: rgb(221, 146, 8);
+.offcanvas-nav {
+    display: none;
 }
 
 .logo img {
@@ -134,9 +136,65 @@ main{
     padding-top: 250px;
 }
 
+.info h3 {
+    padding-bottom: 25px;
+    color: red;
+}
+
 .info p {
-    padding-top: 4px;
+    padding-top: 7.5px;
     color: rgb(145, 97, 94);
+}
+
+/* Styling for smaller screesns */
+@media only screen and (max-width: 845px) {
+
+    .nav {
+        display: none; 
+    }
+
+    .navbar {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offcanvas {
+        right: 0; 
+    }
+
+    .sidebar img {
+        padding-bottom: 50px;
+        height: 200px;
+        width: 100px;
+    }
+
+    .offcanvas-nav {
+        display: contents;
+    }
+
+    .offcanvas-nav, .links, .info {
+        padding-top: 100px; 
+    }
+
+    .offcanvas-nav li {
+        list-style-type: none;
+        padding-top: 5px;
+    }
+
+    .nav a, .links a {
+        padding: 10px 0; 
+        text-align: center;
+    }
+
+    .links img {
+        margin-right: 0; 
+    }
 }
 
 /* Header Container work  */
@@ -144,45 +202,7 @@ main{
     background-color: orange;
     width: 100%;
 }
-.header-wrapper{
-    width: 100%;
-    height: calc(100vh - 100px);
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/images/bg-01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap:20px;
-}
-.left-header-info{
-    max-width: 40%;
-    flex-grow: 0;
-    flex-shrink: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-}
-.left-header-info > h1{
-    font-size: 4em;
-    font-weight: 900;
-    color: white;
-}
-.left-header-info > button{
-    width: 150px;
-    color: white;
-    background-color: #ffa41d;
-    padding: 16px 10px;
-    border-radius: 50px;
-    font-size: 0.8em;
-    font-weight: bold;
-    border: none;
-}
-.left-header-info > button:hover{
-    background-color: #c6760e;
-}
+
 
 /* Features Work  */
 .features{
