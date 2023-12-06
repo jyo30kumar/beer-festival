@@ -179,7 +179,7 @@ main{
     }
 
     .offcanvas-nav, .links, .info {
-        padding-top: 100px; 
+        padding-top: 75px; 
     }
 
     .offcanvas-nav li {
@@ -212,8 +212,68 @@ main{
 
 /* Brand Container work  */
 .brand-container{
-    background-color: lightblue;
+    background-color: white;
     width: 100%;
+}
+
+.brand-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-image: url(/images/bg-03.jpg);
+    background-size: cover;
+}
+
+.brand-header p {
+    color: red;
+}
+
+.brand-header h1 {
+    font-size: 3.3rem;
+}
+
+.brand-header button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 333px;
+    margin-top: 5px;
+    background-color: orange;
+    color: #ffffff;
+}
+
+.brand-header button:hover {
+    cursor: pointer;
+    background-color: rgb(192, 126, 4);
+}
+
+.beer-brands {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.beer-brands img {
+    width: 150px;
+    height: 150px;
+    opacity: 50%;
+}
+
+.beer-brands img:hover {
+    opacity: 100%;
+}
+
+.beer-brands h2 {
+    text-wrap: wrap;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 /* Event Container Work */
