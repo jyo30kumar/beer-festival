@@ -146,6 +146,17 @@ footer{
     .left-header-info{
         margin-left: 30px;
     }
-
-
+}
+@media (max-width:600px){
+    .header-wrapper{
+        flex-direction: column;
+        gap:20px;
+    }
+    .left-header-info{
+        align-items: center;
+    }
+    .left-header-info > h1{
+        font-size: 2em;
+        text-align: center;
+    }
 }
