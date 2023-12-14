@@ -171,6 +171,7 @@ footer{
     }
     .left-header-info{
         align-items: center;
+        flex-basis: 37%;
     }
     .left-header-info > h1{
         font-size: 2em;
