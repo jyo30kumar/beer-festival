@@ -103,9 +103,26 @@ nav{
 }
 
 /* Features Work  */
-.features{
+.features {
     background-color: lightgreen;
     width: 100%;
+    
+}
+.features h1, .features p, .features h3 {
+    font-family: 'Dosis', sans-serif; 
+}
+.craftbeer {
+    text-align: center;
+}
+.featureImages1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 0%;
+}
+
+.featureImages1 img {
+    width: 100%;
+    height: auto;
 }
 
 /* Brand Container work  */
@@ -147,13 +164,15 @@ footer p{
 .footer-img-container{
     display: flex;
     justify-content: space-around;
-    gap:8px;
+    gap:15px;
     padding: 10px;
 }
 .footer-img-container img{
     object-fit: cover;
     height: 150px;
     width: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
     border: 3px solid white;
 }
 .footer-content-section{
@@ -207,6 +226,8 @@ footer p{
     .footer-img-container img{
         height: 250px;
         width: 300px;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
 }
 @media (max-width:800px){
@@ -217,10 +238,6 @@ footer p{
     .left-header-info{
         margin-left: 30px;
     }
-    .footer-img-container img{
-        height: 200px;
-        max-width: 450px;
-    }
 }
 @media (max-width:600px){
     .header-wrapper{
@@ -229,6 +246,7 @@ footer p{
     }
     .left-header-info{
         align-items: center;
+        flex-basis: 37%;
     }
     .left-header-info > h1{
         font-size: 2em;
