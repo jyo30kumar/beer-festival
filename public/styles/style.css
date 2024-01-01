@@ -237,6 +237,7 @@ footer p{
     }
     .left-header-info{
         margin-left: 30px;
+        width: 80%;
     }
 }
 @media (max-width:600px){
@@ -245,6 +246,7 @@ footer p{
         gap:20px;
     }
     .left-header-info{
+        width: 80%;
         align-items: center;
         flex-basis: 37%;
     }
