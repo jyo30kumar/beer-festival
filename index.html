@@ -13,8 +13,59 @@
     <main>
 
         <!----------- Navbar starts ------------->
-        <nav>
-            <h1>Navbar</h1>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./public/images/beer-festival2.jpg" alt="Beer Festival Logo">
+            </div>
+            <div class="nav">
+                <li><a href="#">Main</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Festival</a></li>
+                <li><a href="#">Follow Us</a></li>
+            </div>
+            <div class="container">
+                <button id="toggleBtn" class="btn"><img src="./public/images/hamburger.png"></button>
+
+                <div class="offcanvas" id="offcanvasRight">
+                    <div class="offcanvas-header">
+                        <button type="button" id="closeBtn" aria-label="Close"><strong>X</strong></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="offcanvas_contact">
+                            <div class="sidebar">
+                                <img src="./public/images/beer-festival2.jpg">
+                            </div>
+                        </div>
+
+                        <div class="offcanvas-nav">
+                            <li><a href="#">Main</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Brands</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Festival</a></li>
+                            <li><a href="#">Follow Us</a></li>
+                        </div>
+
+                        <!-- Add  icon links here -->
+                        <div class="links">
+                            <div class="link"><img src="./public/images/links/facebook.png" alt="Facebook Logo"><a href="https://www.facebook.com/">Facebook</a></div>
+                            <div class="link"><img src="./public/images/links/Instagram.png" alt="Instagram Logo"><a href="https://www.instagram.com/">Instagram</a></div>
+                            <div class="link"><img src="./public/images/links/twitter.png" alt="Twitter Logo"><a href="https://twitter.com/">Twitter</a></div>
+                            <div class="link"><img src="./public/images/links/linkedin.png" alt="LinkedIn Logo"><a href="https://www.linkedin.com/">LinkedIn</a></div>
+                        </div>
+
+                        <!-- Add info here -->
+                        <div class="info">
+                            <h3>Creators</h3>
+                            <p><a href="https://github.com/jyo30kumar">jyo30kumar</a></p>
+                            <p><a href="https://github.com/Sibusiso07">Yur13_Sibusiso</a></p>
+                            <p><a href="https://github.com/ardentandre">ardentandre</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
         <!----------- Navbar ends ------------->
 
@@ -41,12 +92,12 @@
             <h3>VERY TASTY</h3>
             <h1>Craft Beer</h1>
             <div class="featureImages1">
-                <img src="public/images/menu/new-friends.jpg" alt="2 people having a beer">
-                <img src="public/images/miscellaneous/pexels-laura-tancredi-7084522.jpg" alt="2 people having a beer">
-                <img src="public/images/miscellaneous/pexels-laura-tancredi-7084488.jpg" alt="2 people having a beer">
-                <img src="public/images/miscellaneous/pexels-pavel-danilyuk-7776171.jpg" alt="2 people having a beer">
-                <img src="public/images/miscellaneous/pexels-elevate-1267309.jpg" alt="2 people having a beer">
-                <img src="public/images/miscellaneous/pexels-flo-dahm-1483769.jpg" alt="2 people having a beer">
+                <img src="./public/images/menu/new-friends.jpg" alt="2 people having a beer">
+                <img src="./public/images/miscellaneous/pexels-laura-tancredi-7084522.jpg" alt="2 people having a beer">
+                <img src="./public/images/miscellaneous/pexels-laura-tancredi-7084488.jpg" alt="2 people having a beer">
+                <img src="./public/images/miscellaneous/pexels-pavel-danilyuk-7776171.jpg" alt="2 people having a beer">
+                <img src="./public/images/miscellaneous/pexels-elevate-1267309.jpg" alt="2 people having a beer">
+                <img src="./public/images/miscellaneous/pexels-flo-dahm-1483769.jpg" alt="2 people having a beer">
             </div>
         </div>
         
@@ -54,7 +105,18 @@
 
         <!----------- Brand Container starts ------------->
         <div class="brand-container">
-            <h1>brand-container</h1>
+            <div class="brand-header">
+                <p>NEW PARK</p>
+                <h1>New Modern Beer Festival</h1>
+                <button><strong>Open</strong></button>
+            </div>
+            <div class="beer-brands">
+                <img src="./public/images/brands/brand-01.png" alt="budweiser">
+                <img src="./public/images/brands/brand-02.jpg" alt="Amstel Bier">
+                <img src="./public/images/brands/brand-03.png" alt="Heineken">
+                <img src="./public/images/brands/brand-04.png" alt="Stella Artois">
+                <h2 style="text-wrap: wrap;">The Beer <br> Brands of <br> Who's who!</h2>
+            </div>
         </div>
         <!----------- Brand Container ends ------------->
 
@@ -108,5 +170,7 @@
         </div>
     </footer>
     <!------ footer ends  ------->
+
+    <script src="./script.js"></script>
 </body>
 </html>

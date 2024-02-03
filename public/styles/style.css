@@ -12,21 +12,189 @@ body{
     font-weight: 700;
     font-size: 1.2rem;
 }
+
 *{  
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 /* Main container  */
 main{
-    width: 100w;
+    width: 100%;
 }
 
 /* Navbar work   */
-nav{
-    background-color: red;
+.navbar{
+    background-color: #ffffff;
     width: 100%;
     height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 1px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);;
+}
+
+.nav li {
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: rgb(221, 146, 8);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.offcanvas-nav {
+    display: none;
+}
+
+.logo img {
+    height: 95px;
+    width: 95px;
+}
+
+.container img {
+    height: 50px;
+    width: 50px;
+}
+
+.sidebar img {
+    height: 100px;
+    width: 100px;
+}
+
+.btn {
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+}
+
+#closeBtn {
+    border: none;
+    outline: none;
+    background-color: #f8f9fa;
+}
+
+.offcanvas {
+    position: fixed;
+    top: 0;
+    right: -500px; /* Initially off-canvas */
+    height: 100vh;
+    width: 500px;
+    background-color: #ffffff;
+    transition: right 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.offcanvas-header {
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.offcanvas-body {
+    padding: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 250px;
+}
+
+.link {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+.links img {
+    height: 20px;
+    width: 20px;
+    margin-right: 7.5px; /* Add margin for spacing between image and text */
+}
+
+.links a {
+    padding-top: 10px;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.info {
+    padding-top: 250px;
+}
+
+.info h3 {
+    padding-bottom: 25px;
+    color: red;
+}
+
+.info p {
+    padding-top: 7.5px;
+    color: rgb(145, 97, 94);
+}
+
+/* Styling for smaller screesns */
+@media only screen and (max-width: 845px) {
+
+    .nav {
+        display: none; 
+    }
+
+    .navbar {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offcanvas {
+        right: 0; 
+    }
+
+    .sidebar img {
+        padding-bottom: 50px;
+        height: 200px;
+        width: 100px;
+    }
+
+    .offcanvas-nav {
+        display: contents;
+    }
+
+    .offcanvas-nav, .links, .info {
+        padding-top: 75px; 
+    }
+
+    .offcanvas-nav li {
+        list-style-type: none;
+        padding-top: 5px;
+    }
+
+    .nav a, .links a {
+        padding: 10px 0; 
+        text-align: center;
+    }
+
+    .links img {
+        margin-right: 0; 
+    }
 }
 
 /* Header Container work  */
@@ -127,8 +295,68 @@ nav{
 
 /* Brand Container work  */
 .brand-container{
-    background-color: lightblue;
+    background-color: white;
     width: 100%;
+}
+
+.brand-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-image: url(/images/bg-03.jpg);
+    background-size: cover;
+}
+
+.brand-header p {
+    color: red;
+}
+
+.brand-header h1 {
+    font-size: 3.3rem;
+}
+
+.brand-header button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 333px;
+    margin-top: 5px;
+    background-color: orange;
+    color: #ffffff;
+}
+
+.brand-header button:hover {
+    cursor: pointer;
+    background-color: rgb(192, 126, 4);
+}
+
+.beer-brands {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.beer-brands img {
+    width: 150px;
+    height: 150px;
+    opacity: 50%;
+}
+
+.beer-brands img:hover {
+    opacity: 100%;
+}
+
+.beer-brands h2 {
+    text-wrap: wrap;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 /* Event Container Work */
