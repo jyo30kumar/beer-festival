@@ -281,26 +281,128 @@ main{
 
 /* Features Work  */
 .features {
-    background-color: lightgreen;
     width: 100%;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6vh 0;
 }
-.features h1, .features p, .features h3 {
-    font-family: 'Dosis', sans-serif; 
+.features > p{
+    color: red;
+    padding: 5px;
+    font-size: 1rem;
 }
-.craftbeer {
-    text-align: center;
+.features > h1{
+    padding: 10px;
+    font-size: 3rem;
 }
 .featureImages1 {
+    padding: 20px 5%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-    gap: 0%;
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: repeat(2, 500px);
+    gap: 10px;
 }
 
-.featureImages1 img {
-    width: 100%;
-    height: auto;
+#feature-img-01{
+    background: url('../images/menu/new-friends.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 25px;
+    color: white;
 }
+#feature-img-01 .fa,#feature-img-02 .fa, #feature-img-03 .fa, #feature-img-04 .fa, #feature-img-05 .fa, #feature-img-06 .fa{
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 12px;
+    margin-bottom: -7px;
+}
+#feature-img-01:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/menu/new-friends.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+#feature-img-02{
+    background: url('../images/miscellaneous/pexels-laura-tancredi-7084522.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 25px;
+    color: white;
+}
+#feature-img-02:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/miscellaneous/pexels-laura-tancredi-7084522.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+#feature-img-03{
+    background: url('../images/miscellaneous/pexels-laura-tancredi-7084488.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 25px;
+    color: white;
+}
+#feature-img-03:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/miscellaneous/pexels-laura-tancredi-7084488.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+#feature-img-04{
+    background: url('../images/miscellaneous/pexels-pavel-danilyuk-7776171.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 25px;
+    color: white;
+}
+#feature-img-04:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/miscellaneous/pexels-pavel-danilyuk-7776171.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+#feature-img-05{
+    background: url('../images/miscellaneous/pexels-elevate-1267309.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 25px;
+    color: white;
+}
+#feature-img-05:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/miscellaneous/pexels-elevate-1267309.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+#feature-img-06{
+    background: url('../images/miscellaneous/pexels-flo-dahm-1483769.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 25px;
+    color: white;
+}
+#feature-img-06:hover{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/miscellaneous/pexels-flo-dahm-1483769.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
 
 /* Brand Container work  */
 .brand-container{
@@ -467,6 +569,10 @@ footer p{
     .beer-brands {
         flex-wrap: wrap;
     }
+    .featureImages1 {
+        grid-template-columns: repeat(2, 45vw);
+        grid-template-rows: repeat(3, 500px);
+    }
 }
 @media (max-width:800px){
     .right-image-wrapper img{
@@ -481,6 +587,10 @@ footer p{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-evenly;
+    }
+    .featureImages1 {
+        grid-template-columns: repeat(1, 90vw);
+        grid-template-rows: repeat(6, 450px);
     }
 }
 @media (max-width:600px){
