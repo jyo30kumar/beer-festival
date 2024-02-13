@@ -408,6 +408,7 @@ main{
 .brand-container{
     background-color: white;
     width: 100%;
+    padding: 10px 0;
 }
 
 .brand-header {
@@ -415,8 +416,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    padding-top: 50px;
+    height: 200px;
     padding-bottom: 10px;
     background-image: url(/images/bg-03.jpg);
     background-size: cover;
@@ -448,22 +448,28 @@ main{
 .beer-brands {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin:30px;
 }
-
-.beer-brands img {
-    width: 150px;
+.beer-brands-col-1{
+    flex: 3;
+    display: flex;
+    justify-content: space-evenly;
+}
+.beer-brands-col-2{
+    flex: 1;
+}
+.beer-brands-col-1 img {
+    width: 180px;
     height: 150px;
     opacity: 50%;
 }
 
-.beer-brands img:hover {
+.beer-brands-col-1 img:hover {
     opacity: 100%;
 }
 
-.beer-brands h2 {
-    text-wrap: wrap;
+.beer-brands-col-2 h2 {
+    text-align: right;
     font-size: 3rem;
     font-weight: bold;
 }
@@ -567,7 +573,10 @@ footer p{
         flex-shrink: 1;
     }
     .beer-brands {
-        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
     }
     .featureImages1 {
         grid-template-columns: repeat(2, 45vw);
@@ -584,9 +593,13 @@ footer p{
         width: 80%;
     }
     .beer-brands {
-        flex-direction: column-reverse;
         align-items: center;
-        justify-content: space-evenly;
+    }
+    .beer-brands-col-1{
+        flex-direction: column-reverse;
+    }
+    .beer-brands-col-2 h2{
+        text-align: center;
     }
     .featureImages1 {
         grid-template-columns: repeat(1, 90vw);
